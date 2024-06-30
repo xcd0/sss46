@@ -35,7 +35,14 @@
 	"split": {
 		"enabled": true,
 		"soft_serial_pin": "GP16",
+		"transport": { "protocol": "serial" },
 		"bootmagic":{ "matrix": [0,0] },
+		"matrix_pins": {
+			"right": {
+				"cols": ["GP4", "GP5", "GP6", "GP7", "GP8", "GP17"],
+				"rows": ["GP0", "GP1", "GP2", "GP3"]
+			}
+		},
 		"encoder":{
 			"right": {
 				"rotary": [
